@@ -1,22 +1,20 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-import styles from './styles.css'
+import styles from './styles.css';
 
 export default class ExampleComponent extends Component {
   static propTypes = {
     text: PropTypes.string
-  }
+  };
 
   render() {
-    const {
-      text
-    } = this.props
+    const { text } = this.props;
 
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+    return <div className={styles.test}>Example Component: {text}</div>;
   }
 }
+
+export const RouterComponent = () => {
+  return <h1>hi router component</h1>;
+};
